@@ -1,0 +1,19 @@
+{
+  "name": "hoplite-motion-reel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Procedural motion reel: Hoplite, the designer. Frames rendered with Skia, music synthesized in code, muxed with ffmpeg.",
+  "scripts": {
+    "fonts": "bash scripts/fetch-fonts.sh",
+    "audio": "node src/audio/synth.js --out out/music.wav",
+    "analyze": "node src/audio/analyze.js out/music.wav",
+    "still": "node src/render.js --still",
+    "sheet": "node src/render.js --sheet",
+    "render": "node src/render.js --video",
+    "build": "bash scripts/build.sh"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.11"
+  }
+}
