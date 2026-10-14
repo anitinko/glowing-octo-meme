@@ -4,6 +4,10 @@
 (`@napi-rs/canvas`), музыка и звуковые эффекты синтезируются в Node, ffmpeg всё сводит.
 Без шаблонов, стоков и сэмплов.
 
+**▶ [Смотреть ролик — MP4, 17 МБ, со звуком](media/hoplite-reel.mp4)**
+
+![Раскадровка: 16 кадров из финального рендера](media/storyboard.png)
+
 ## Сборка
 
 ```bash
@@ -12,7 +16,8 @@ npm run fonts      # Unbounded, JetBrains Mono, Manrope, Playfair Display (с к
 npm run build      # → out/hoplite-reel.mp4
 ```
 
-Нужны Node 20+ и ffmpeg с libx264. Полный рендер — около 17 минут на 2 vCPU, музыка — ~11 секунд.
+Нужны Node (проверено на 24) и ffmpeg с libx264. Полный рендер — около 17 минут на 2 vCPU,
+музыка — ~11 секунд. Готовый рендер из этого репозитория лежит в `media/`, свежая сборка — в `out/`.
 
 Для итераций:
 
